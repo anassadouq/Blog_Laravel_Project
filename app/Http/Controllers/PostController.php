@@ -21,26 +21,24 @@ class PostController extends Controller
         return view('post.create');
     }
 
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Add image validation rules
-        ]);
         $post = new Post();
-        $post->title = $request->input('title');
-        $post->description = $request->input('description');
-        $post->user_id = auth()->user()->id;
+        $post->user_id = $request->user()->id; // Assuming the user ID is obtained from the authenticated user
+        $post->title = $request->title;
+        $post->description = $request->description;
+    
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $imagePath = $image->store('images', 'public');
-            $post->image = $imagePath;
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('images'), $imageName);
+            $post->image = $imageName;
         }
-        
+    
         $post->save();
+    
         return redirect()->route('post.index');
-    }
+    }    
 
     public function show($id)
     {
@@ -54,16 +52,20 @@ class PostController extends Controller
         return view('post.edit', compact('post'));
     }
 
-    public function update(UpdatePostRequest $request, $id)
+    public function update(UpdatePostRequest $request, Post $post)
     {
-        $post = Post::findOrFail($id);
-        $post->title = $request->input('title');
-        $post->description = $request->input('description');
+        $post->update($request->except('image')); // mise à jour des autres attributs du détail
+    
+        // mise à jour de l'image si une nouvelle a été téléchargée
         if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imagePath = $image->store('images', 'public'); // Store the updated image in the 'public/images' directory
-            $post->image = $imagePath;
+            $imagePath = public_path('images/'.$post->image); // supprimez l'ancienne image
+            if (file_exists($imagePath)) {
+                unlink($imagePath);
+            }
+            $post->image = $request->image->getClientOriginalName();
+            $request->image->move(public_path('images'), $post->image);
         }
+        
         $post->save();
         return redirect('/post');
     }

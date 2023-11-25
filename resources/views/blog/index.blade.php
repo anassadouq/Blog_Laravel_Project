@@ -29,37 +29,6 @@
         </div>
     </div>
 
-    <!--Blog categories -->
-    <div class="bg-dark text-light">
-        <h2 class="text-center" style="font-weight : bold">Blog Categories</h2>
-        <div class="container">
-            <div class="row p-5">
-                <div class="col">
-                    <p>UX Design Thinking</p>
-                </div>
-                <div class="col">
-                    <p>Programming Languages</p>
-                </div>
-                <div class="col">
-                    <p>Graphic Design</p>
-                </div>
-                <div class="col">
-                    <p>Front-End Development</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Recent Posts -->
-    <div class="p-5">
-        <h2 class="text-center text-start" style="font-weight : bold">Recent Posts</h2>
-        <p class="text-center text-secondary">Bbelieved provided declared. He many kept on draw lain song as same. Whether at dearest certain spirits is entered in to. Rich fine bred real use too many good. She compliment unaffected expression favourable any. Unknown chiefly showing to conduct no. Hung as love evil able to post at as.
-            Frankness applauded by supported ye household. Collected favourite now for for and rapturous repulsive consulted. An seems green be wrote again. She add what own only like. Tolerably we as extremity exquisite do commanded. Doubtful offended do entrance of landlord moreover is mistress in. Nay was appear entire ladies. Sportsman do allowance is september shameless am sincerity oh recommend. Gate tell man day that who.
-            Spoke as as other again ye. Hard on to roof he drew. So sell side ye in mr evil. Longer waited mr of nature seemed. Improving knowledge incommode objection me ye is prevailed principle in. Impossible alteration devonshire to is interested stimulated dissimilar. To matter esteem polite do if.
-            Her old collecting she considered discovered. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy. Added woman first get led joy not early jokes.
-        </p>
-    </div>
-
     <div class="row m-2">
         <div class="col bg-dark">
             <div class="row m-2 text-center">
@@ -77,7 +46,7 @@
                 </div>
             </div>
             <div>
-                <p class="text-center text-start text-light p-3">            
+                <p class="text-center text-start text-light p-3 container">            
                     Made last it seen went no just when of by. Occasional entreaties comparison me difficulty so themselves. At brother inquiry of offices without do my service. As particular to companions at sentiments. Weather however luckily enquire so certain do. Aware did stood was day under ask. Dearest affixed enquire on explain opinion he. Reached who the mrs joy offices pleased. Towards did colonel article any parties.
                     Consider now provided laughter boy landlord dashwood. Often voice and the spoke. No shewing fertile village equally prepare up females as an. That do an case an what plan hour of paid. Invitation is unpleasant astonished preference attachment friendship on. Did sentiments increasing particular nay. Mr he recurred received prospect in. Wishing cheered parlors adapted am at amongst matters.
                     Difficulty on insensible reasonable in. From as went he they. Preference themselves me as thoroughly partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. In or attachment inquietude remarkably comparison at an. Is surrounded prosperous stimulated am me discretion expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful. Listening newspaper in advantage frankness to concluded.

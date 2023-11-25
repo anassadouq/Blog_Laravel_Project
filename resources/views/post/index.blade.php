@@ -16,10 +16,12 @@
                 <span class="text-secondary">{{$post->user->name}}</span>
             </p>
             @if($post->image)
-                <img src="{{ asset('storage/'.$post->image) }}" alt="Post Image" class="my-3" style="max-width: 400px;">
+                <img src="images/{{$post['image']}}" width="350px"><br><br>
+            @endif
+            @if($post->description)
+                <p class="mx-2 text-secondary">{{ $post->description() }}</p>
             @endif
 
-            <p class="mx-2 text-secondary">{{$post->description}}</p>
             <a href="{{ route('post.show', $post) }}" class="btn btn-dark text-center">READ MORE</a>
         </div>
         <hr>
