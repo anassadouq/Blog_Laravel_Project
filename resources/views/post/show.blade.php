@@ -6,7 +6,7 @@
     </center>
     <h2 class="text-center my-3" style="font-weight : bold">{{$post->title}}</h2>
 
-    <div class="mx-2">
+    <div class="my-4 mx-2">
         <p class="text-center" style="font-weight:bold">By : 
             <span class="text-secondary">{{$post->user->name}}</span>
         </p>

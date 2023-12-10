@@ -14,7 +14,7 @@
             <h1 class="text-light p-5" style="font-size:50px; font-weight:bold">WELCOME TO MY BLOG</h1>
         </div>
         <div class="text-center">
-            <a href="/blog" class="text-dark text-center m-5 p-3 btn btn-light">START READING</a>
+            <a href="/post" class="text-dark text-center m-5 p-3 btn btn-light">START READING</a>
         </div>
     </div>
     <div class="container row p-5">
@@ -60,5 +60,7 @@
             <img src="https://picsum.photos/id/220/580/620" alt="">
         </div>
     </div>
+        
+    @include('layouts.footer')
 
 @endsection

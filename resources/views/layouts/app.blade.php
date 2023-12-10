@@ -77,10 +77,6 @@
         <div>
             @yield('content')
         </div>
-            <hr>
-        <div>
-            @include('layouts.footer')
-        </div>
     </div>
 </body>
 </html>

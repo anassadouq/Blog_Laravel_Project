@@ -26,4 +26,7 @@
         </div>
         <hr>
     @endforeach
+
+    @include('layouts.footer')
+    
 @endsection
